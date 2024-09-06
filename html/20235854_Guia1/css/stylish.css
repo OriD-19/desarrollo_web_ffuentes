@@ -1,0 +1,158 @@
+body {
+    background: black;
+    color: white;
+    font-family: 'Roboto Slab', sans-serif;
+    padding: 3rem;
+}
+
+h1 {
+    font-style: italic;
+    margin: 5px auto;
+    font-size: 3rem;
+}
+
+h2 {
+    margin: 5px auto;
+    font-size: 2.5rem;
+}
+
+header {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border: 3px solid rgb(245, 22, 22);
+    padding: 10px;
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+}
+
+hr {
+    border: 2px dashed white;
+}
+
+nav table {
+    width: 100%;
+    text-align: center;
+}
+
+nav table td {
+    background-color: red;
+    padding: 10px;
+}
+
+nav table td a {
+    text-decoration: none;
+    color: black;
+}
+
+#logo {
+    width: 33%;
+    margin: 3rem auto;
+
+}
+
+.japanese {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.card {
+    line-height: 1.5rem;
+    background-color: rgba(245, 22, 22, 0.2);
+    border: 2px solid rgb(245, 22, 22);
+    padding: 2rem;
+    margin: 5rem auto;
+}
+
+.card h2 {
+    margin-bottom: 3rem;
+}
+
+.card table {
+    table-layout: fixed;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+.characters {
+    border-collapse: separate;
+    border-spacing: 2rem; 
+}
+
+.characters tr {
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+.characters h3 {
+    font-size: 2rem;
+    color: black;
+    -webkit-text-stroke: 1px red;
+}
+
+.chapters .chapter-list ol li {
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 2.2rem;
+    -webkit-text-stroke: 0.8px red;
+    color: black;
+}
+
+.chapters ol {
+    list-style-position: inside;
+}
+
+#capitulos a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: red;
+    border: 2px dotted red;
+    padding: 1rem;
+    margin: 10px;
+}
+
+#capitulos a:hover {
+    -webkit-text-stroke: 0.5px red;
+    color: white;
+}
+
+#capitulos .more-info {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+
+.details {
+    font-size: 2rem;
+}
+
+.details, .details td {
+    border: 2px solid white;
+    border-collapse: collapse;    
+    padding: 20px;
+}
+
+.details tr td:nth-child(1) {
+    background-color: black;
+    -webkit-text-stroke: 0.5px red;
+}
+
+.more-image {
+    width: 80%;
+    text-align: center;
+    margin: 2rem auto;
+    margin-bottom: 0;
+}
+
+footer {
+    border: 2px solid red;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+}

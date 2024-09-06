@@ -1,0 +1,46 @@
+body {
+    background-color: steelblue;
+    padding: 2rem;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 3rem; 
+    text-decoration: underline;
+    font-weight: 800;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main, .author {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.author {
+    font-size: 1.5rem;
+    margin: 2rem auto;
+}
+
+
+main ul {
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+main ul li {
+    background-color: white;
+    padding: 20px;
+    margin: 10px auto;
+    width: 50%;
+    border: 3px solid tan;
+    border-radius: 5%;
+}
+
+main ul li a {
+    color: peru;
+    text-decoration: none;
+    font-size: 2rem;
+}
