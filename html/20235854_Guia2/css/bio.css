@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 20px;
+    background-color: #03120E;
+}
+
+a {
+    text-decoration: none;
+}
+
+.separator {
+    margin: 3rem 2rem;
+    border-top: 4px solid #03120E;
+    border-style: dotted;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+nav {
+    background-color: #03120E;
+}
+
+nav h2 {
+    text-align: center;
+    color: white;
+    padding: 1.5rem;
+}
+
+nav table {
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+nav table thead tr {
+    height: 2.5rem;
+}
+
+nav table thead tr td a {
+    font-size: 1.2rem;
+}
+
+nav table thead tr td:nth-child(1) {
+    background-color: #8AB0AB;
+}
+
+a[href="#first"] {
+    color: black;
+}
+
+nav table thead tr td:nth-child(2) {
+    background-color: #3E505B;
+}
+
+a[href="#road"] {
+    color: white;
+}
+
+nav table thead tr td:nth-child(3) {
+    background-color: #26413C;
+    color: white;
+}
+
+a[href="#now"] {
+    color: white;
+}
+
+.intro {
+    background-image: url("../img/discurso.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 28rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.intro h1 {
+    padding: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.intro h2 {
+    margin-bottom: 2rem;
+}
+
+.intro p {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1.5rem;
+}
+
+/*
+* seccion principal
+*/
+
+section {
+    padding: 3.5rem;
+}
+
+section h2 {
+    margin-bottom: 2rem;
+}
+
+.first-section {
+    background-color: #8AB0AB;
+}
+
+.first-section .content-with-image tbody tr td:first-child {
+    padding-right: 5rem;
+    text-align: justify;
+}
+
+.road-section {
+    background-color: #3E505B;
+    color: white;
+}
+
+.road-section h2 {
+    text-align: right;
+}
+
+.road-section .content-with-image tbody tr td:nth-child(2) {
+    padding-left: 5rem;
+    text-align: justify;
+}
+
+.gallery {
+    width: 100%;
+    text-align: center;
+}
+
+.gallery tbody tr td {
+    padding: 0 1rem;
+}
+
+.card {
+    background-color: #1A1D1A;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 1rem 0;
+
+    font-size: 16px;
+    min-height: 18rem;
+}
+
+.card img {
+    margin-bottom: 1.5rem;
+}
+
+.now-section {
+    color: white;
+    background-color: #26413C;
+}
+
+.now-section .content-with-image tbody tr td:first-child {
+    padding-right: 5rem;
+    text-align: justify;
+}
+
+.now-section .final-words {
+    text-align: center;
+}
+
+.now-section .final-words img {
+    margin-bottom: 2rem; 
+}
+
+.now-section .final-words p {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+footer {
+    background-color: #03120E;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
