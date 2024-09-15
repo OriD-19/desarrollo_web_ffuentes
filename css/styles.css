@@ -25,16 +25,36 @@ main {
     padding: 2rem;
 }
 
+main h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 main ul {
     margin-left: 4rem;
 }
 
 a {
     text-decoration: none;
-    color: white;
 }
 
 a:hover {
-    color: violet;
     font-weight: bold;
+}
+
+.container-guias {
+    padding: 2rem;
+}
+
+.guia-card {
+    display: block;
+    width: 100%;
+
+    background-color: white;
+    border-radius: 20px;
+
+    padding: 2rem;
+    font-size: 2rem;
+    margin-bottom: 3rem;
 }

@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
+    font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -21,6 +25,7 @@ a {
 
 h1 {
     font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
 }
 
 h2 {
@@ -35,6 +40,7 @@ nav h2 {
     text-align: center;
     color: white;
     padding: 1.5rem;
+    font-family: 'Playfair Display', serif;
 }
 
 nav table {
@@ -77,7 +83,8 @@ a[href="#now"] {
 }
 
 .intro {
-    background-image: url("../img/discurso.jpg");
+    background-image: url("../img/loml.jpeg");
+    background-position: 25% 30%;
     background-repeat: no-repeat;
     background-size: 100vw;
     height: 28rem;
@@ -138,6 +145,8 @@ section h2 {
 .road-section .content-with-image tbody tr td:nth-child(2) {
     padding-left: 5rem;
     text-align: justify;
+    line-height: 170%;
+    font-size: 1.1rem;
 }
 
 .gallery {
@@ -152,15 +161,52 @@ section h2 {
 .card {
     background-color: #1A1D1A;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 2rem 0;
     margin: 1rem 0;
 
     font-size: 16px;
-    min-height: 18rem;
+    min-height: 29rem;
 }
 
-.card img {
+.card p {
+    width: 60%;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+
+.card #chiquito-raro,
+.card #guatemala,
+.card #diploma-chiquito {
     margin-bottom: 1.5rem;
+    border-radius: 20px;
+}
+
+#chiquito-raro {
+    background-image: url("../img/chiquito_raro.jpeg");
+    width: 230px;
+    height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+#diploma-chiquito {
+    background-image: url("../img/diploma_chiquito.jpeg");
+    width: 230px;
+    height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+#guatemala {
+    background-image: url("../img/guatemala.jpeg");
+    width: 230px;
+    height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 .now-section {
@@ -171,6 +217,8 @@ section h2 {
 .now-section .content-with-image tbody tr td:first-child {
     padding-right: 5rem;
     text-align: justify;
+    font-size: 1.2rem;
+    line-height: 170%;
 }
 
 .now-section .final-words {
@@ -197,3 +245,45 @@ footer {
     width: 100%;
 }
 
+#image-bebe1 {
+    background-image: url("../img/bebe1.jpeg");
+    width: 640px;
+    height: 300px;
+    background-position: 25% 68%;
+    border-radius: 15px;
+}
+
+#image-bebe2 {
+    background-image: url("../img/bebe2.jpeg");
+    width: 640px;
+    height: 300px;
+    background-position: 25% 25%;
+    border-radius: 15px;
+}
+
+#chiquito-cool {
+    background-image: url("../img/chiquito_cool.jpeg");
+    width: 640px;
+    height: 450px;
+    background-position: 25% 30%;
+    border-radius: 30px;
+}
+
+#happy-birthday {
+    background-image: url("../img/happy_birthday.jpeg");
+    width: 640px;
+    height: 700px;
+    background-position: 25% 40%;
+
+    border-radius: 20px;
+}
+
+#nownow {
+    background-image: url("../img/nownow.jpeg");
+    width: 600px;
+    height: 600px;
+    background-position: 50% 50%;
+
+    margin: 0 auto 20px;
+    border-radius: 20px;
+}
