@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body class="formdatos">
+        <form action="ejercicio3.html" method="post">
+            <img src="img/foto-perfil.jpg" alt="Foto perfil">
+            <h1>Perfil</h1>
+
+            <fieldset id="datos">
+                <legend>DATOS</legend>
+                <table border="0">
+                    <tr>
+                        <td>Fecha de nacimiento:</td>
+                        <td><input type="date" name="nacimiento"></td>
+                    </tr>
+                    <tr>
+                        <td>Ingrese su foto:</td>
+                        <td><input type="file" name="foto"></td>
+                    </tr>
+                    <tr>
+                        <td>Nacionalidad:</td>
+                        <td>
+                            <input type="text" list="nacionalidad">
+                            <datalist id="nacionalidad">
+                                <option value="Salvadoreño">Salvadoreño(a)</option>
+                                <option value="Hondureño">Hondureño(a)</option>
+                                <option value="Guatemalteco">Guatemalteco(a)</option>
+                                <option value="Costarricense">Costarricense</option>
+                                <option value="Nicaragüense">Nicarag&uuml;ense</option>
+                                <option value="Panameño">Panameño(a)</option> 
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Color favorito:</td>
+                        <td><input type="color" name="color"></td>
+                    </tr>
+                    <tr>
+                        <td>Sexo:</td>
+                        <td>
+                            <input type="radio" name="sexo" value="mas" checked>Masculino <br>
+                            <input type="radio" name="sexo" value="fem" checked>Femenino <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Edad:</td>
+                        <td>
+                            <input type="number" name="edad" min="18" max="50"/>Masculino <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dirección:</td>
+                        <td>
+                            <textarea rows="5" cols="30"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset id="temas">
+                <legend>Temas</legend>
+                Elija temas de interes: <br><br>
+                <input type="radio" name="tema" value="ciencia" checked> Ciencia <br>
+                <input type="radio" name="tema" value="arte"> Arte <br>
+                <input type="radio" name="tema" value="literatura"> Literatura <br>
+                <input type="radio" name="tema" value="tecnologia"> Tecnología <br>
+                <input type="radio" name="tema" value="musica"> Música <br>
+                <input type="radio" name="tema" value="informatica"> Informática <br><br>
+            </fieldset>
+
+            <fieldset id="aficiones">
+            </fieldset>
+
+            <button class="boton" type="submit">
+                Enviar Información
+            </button>
+        </form> 
+    </body>
+</html>
