@@ -1,0 +1,146 @@
+nav {
+    width: 100%;
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 0 5px 0;
+}
+
+nav ul li {
+    float: left;
+    margin: 0 -15px;
+    padding: 10px 0 0 0;
+    border-top: solid 2px white;
+    border-bottom: solid 2px white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: .3em .5em;
+    margin: 0 .5em;
+    display: block;
+    color: white;
+    transition: color 1s, transform 3s;
+}
+
+nav ul li a:hover {
+    color: #aaa;
+    transform: scale(1.3);
+}
+
+#encabezado {
+    margin: 0 auto;
+    width: 90%;
+}
+
+#superior #encabezado #logo {
+    margin: 10px 0;
+    width: 120px;
+    height: auto;
+}
+
+#imgDesc img {
+    /* Ocultar la imagen para el diseño en moviles */
+    display: none;
+    width: 100%;
+    height: auto;
+    float: none;
+}
+
+#imgDesc {
+    overflow: auto;
+    width: 100%;
+}
+
+#descripcion {
+    width: 100%;
+}
+
+#descripcion p {
+    margin: 20px 0 10px 0;
+    color: white;
+    line-height: 140%;
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+#contenido {
+    width: 90%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.plan {
+    width: 92%;
+    padding: 10px 2%;
+    margin: 20px 1%;
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.plan img {
+    width: 100%;
+    height: auto;
+}
+
+.boton {
+    width: 92%;
+    float: 5px auto;
+}
+
+.planes {
+    width: 94%;
+    background: white;
+    padding: 1% 3%;
+}
+
+.planes img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.planes h1 {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.planes .precio {
+    font-size: 1.1em;
+    margin: 20px 0 5px;
+    padding-bottom: 15px;
+    border-bottom: solid 2px grey;
+    font-weight: bold;
+}
+
+.plan p {
+    font-size: 0.8em;
+}
+
+.plan h1 {
+    font-size: 1em;
+}
+
+#galeria .plan {
+    font-size: 0.8em;
+    padding-bottom: 10px;
+    margin: 10px auto;
+    display: inline-block;
+    float: none;
+    width: 90%;
+    text-align: center;
+    font-style: italic;
+}
+
+#galeria .plan p {
+    clear: both;
+}
+
+#galeria .plan img {
+    width: 90%;
+    height: auto;
+    margin: 5px 5%;
+}
