@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --background-color: #01778f;
+    --accent-color: #fdbb2d;
+    --cream: #f9ecb6;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,23 +13,109 @@
     font-family: 'Poppins', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 html {
-    margin: 2rem;
-    background-color: steelblue;
+    background-color: rgba(2, 0, 36, 1);
+    color: white;
+    font-size: 17px;
+    overflow-x: hidden;
+}
+
+#background_effect {
+    position: fixed;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 18%, rgba(1,119,143,1) 100%); 
 }
 
 header {
+    flex-wrap: no-wrap;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 18%, rgba(1,119,143,1) 100%); 
     text-align: center;
-    width: 80%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem;
+    padding-bottom: 6rem;
 }
 
-header ul {
-    list-style: none;
+header * {
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 50%;
+}
+
+
+.texto_header {
+    padding: 1rem;
+}
+
+.texto_header * {
+    color: white;
+    width: 100%;
+}
+
+.authors {
+    margin: 3rem 0;
+}
+
+.accent {
+    background: linear-gradient(to left, white, var(--accent-color) 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.texto_header h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+#bio {
+    margin-top: 1rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.call_to_action {
+    padding: 1.5rem;
+    background-color: var(--accent-color);
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: background 0.5s;
+}
+
+.call_to_action:hover {
+    background-color: #bd8712;
+}
+
+.html_css {
+    position: relative;
+}
+
+#css {
+    position: absolute;
+    width: 400px;
+    top: 25%;
+    left: 40%;
 }
 
 main {
-    padding: 2rem;
 }
 
 main h2 {
@@ -35,26 +128,248 @@ main ul {
     margin-left: 4rem;
 }
 
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    font-weight: bold;
-}
-
-.container-guias {
-    padding: 2rem;
-}
-
-.guia-card {
-    display: block;
+.sobre_materia {
     width: 100%;
+    line-height: 2.2rem;
+    position: relative;
+    overflow: hidden;
+    padding: 8rem;
+}
 
-    background-color: white;
-    border-radius: 20px;
+.sobre_materia .content {
+    position: relative;
+    z-index: 10;
+}
 
-    padding: 2rem;
-    font-size: 2rem;
+.sobre_materia .content h2 {
     margin-bottom: 3rem;
+    position: relative;
+}
+
+.sobre_materia .content div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.sobre_materia .content div p {
+    padding: 2rem 0;
+}
+
+.sobre_materia .content div img {
+    width: 260%;
+    margin-left: 6rem;
+    box-shadow: 1rem -1rem 5px var(--cream);
+    border-radius: 15px;
+}
+
+#decoration {
+    background: rgb(0,0,0);
+    background: linear-gradient(306deg, rgba(0,0,0,1) 0%, rgba(9,9,121,1) 34%, rgba(1,6,9,1) 100%); 
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    top: -5rem;
+    left: -5rem;
+    z-index: 1;
+}
+
+.guias {
+    margin-top: 4rem;
+    padding: 5rem;
+}
+
+.container_guias {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.guia_card {
+    margin-top: 2rem;
+    position: static;
+    color: black;
+    width: 30%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+
+.guia_card .card_header {
+    border-radius: 15px 15px 0 0;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.guia_card .card_header h3 {
+    font-size: 1.8rem;
+}
+
+.guia_card .card_header h4 {
+    font-size: 1.1rem;
+}
+
+.guia_card p {
+    padding: 2rem;
+    line-height: 1.9rem;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.dropdown button {
+    border: none;
+    background: black;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    transition: background-color 1s;
+    position: relative;
+    z-index: 10;
+}
+
+.dropdown button::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 27%, rgba(208,145,8,1) 86%); 
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.25s linear;
+}
+
+.dropdown button:hover::before {
+    opacity: 1;
+}
+
+.ejercicios_guia {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    left: 0;
+    min-width: 200px;
+    z-index: 100;
+}
+
+.ejercicios_guia a {
+    display: block;
+    padding: 15px;
+    color: white;
+}
+
+.dropdown:hover .ejercicios_guia {
+    display: block;
+}
+
+#foda {
+    padding: 5rem;
+}
+
+.container_foda {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    border: 1px solid black;
+    background: linear-gradient(306deg, rgba(0,0,0,1) 0%, rgba(9,9,121,1) 34%, rgba(1,6,9,1) 100%); 
+    padding: 1rem;
+    word-wrap: break-word;
+}
+
+.container_foda div {
+    width: 48%;
+    padding: 2rem;
+    background-color: white;
+    color: black;
+    margin: 1%;
+    border: 1px solid black;
+    list-style-position: inside;
+}
+
+.container_foda div h3 {
+    background: linear-gradient(306deg, rgba(0,0,0,1) 0%, rgba(9,9,121,1) 34%, rgba(1,6,9,1) 100%); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.container_foda div p {
+    margin: 1rem 0;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.container_foda div ul {
+    list-style: none;
+    margin: 0;
+}
+
+.container_foda div ul li {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.container_foda div:nth-child(2n-1) {
+    text-align: right;
+}
+
+#fortalezas {
+    border-radius: 15px 0 0 0;
+}
+
+#oportunidades {
+    border-radius: 0 15px 0 0;
+}
+
+#desafios {
+    border-radius: 0 0 0 15px;
+}
+
+#amenazas {
+    border-radius: 0 0 15px 0;
+}
+
+#retroalimentacion {
+    background: rgb(1,119,143);
+    background: linear-gradient(180deg, rgba(1,119,143,1) 0%, rgba(2,2,61,1) 27%, rgba(0,0,0,1) 79%); 
+    padding: 5rem;
+}
+
+#retroalimentacion h2 {
+    margin-bottom: 2rem;
+}
+
+.feed_layout {
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+}
+
+.feed_card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 3rem;
+}
+
+
+#liked, #disliked, #challenge, #feedback {
+    width: 100px;
+    height: 100px;
+    filter: invert(7%) sepia(75%) saturate(2556%) hue-rotate(233deg) brightness(94%) contrast(119%);
 }

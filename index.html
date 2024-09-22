@@ -5,80 +5,216 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Desarrollo Web I - Fernando Fuentes</title>
         <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     </head>
     <body>
+        <div id="background_effect">
+
+        </div>
         <header>
-            <h1>Desarrollo Web I: Guías de trabajo</h1> 
-            <ul>
-                <li>Alumno: Fernando José Fuentes Castillo 20235854</li>
-                <li>Docente: Guillermo Calderón</li>
-            </ul>
+            <div class="texto_header">
+                <h1>Desarrollo Web I</h1> 
+                <div class="datos_personales">
+                    <div class="authors">
+                        <h2><span class="accent">Por:</span> Fernando José Fuentes Castillo (20235854)</h2> 
+                        <h2><span class="accent">Profesor:</span> Guillermo Calderón</h2>
+                    </div>
+                    <p id="bio">
+                        Soy un estudiante de Ingeniería de software y Negocios Digitales
+                        con mucha voluntad para aprender cosas nuevas. En la presente página,
+                        se encuentran todos los trabajos relacoinados con la materia,
+                        con el fin de mejorar mis habilidades en el desarrollo web.
+                    </p>
+                    <a href="#guias" class="call_to_action">Guias y proyectos</a>
+                </div>
+            </div>
+            <div class="html_css">
+                <img id="html" src="img/pngegg.png" alt="html logo">
+                <img id="css" src="img/pngegg(1).png" alt="css logo">
+            </div>
         </header>
 
         <main>
-            <h2>Guías de trabajo</h2>
-            <div class="container-guias">
-                <div class="guia-card">
-                    <h3>Primera Guía, 7/09/2024</h3>
-                    <ul>
-                        <li>
 
-                            <a href="./html/20235854_Guia1/index.html">Primera guia de trabajo</a>
-                        </li>
-                    </ul>
+            <section class="sobre_materia">
+                <div id="decoration">
+                </div>
+                <div class="content">
+                    <h2>Sobre la materia</h2>
+                    <div>
+                        <p>
+                            Desarrollo Web I es un curso introductorio a la progrmaación
+                            web, con énfasis en el desarrollo frontend y en la maquetación
+                            con <span class="accent">HTML</span> y <span class="accent">CSS</span>.
+                            Durante la segunda mitad del curso, se entrará de lleno a la
+                            parte de programación con <span class="accent">JavaScript</span> 
+                            y al manejo de la funcionalidad de las páginas web.
+                        </p>
+                        <img src="img/webdev.avif" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="guias" id="guias">
+                <h2>Guías de trabajo</h2>
+                <div class="container_guias">
+                    <div class="guia_card">
+                        <div class="card_header">
+                            <h3><span class="accent">Guía 1</span></h3>
+                            <h4>07/09/2024</h4>
+                        </div>
+                        <p>
+                            Descripción de la guía 
+                            Lorem, ipsum dolor sit 
+                            amet consectetur adipisicing elit. 
+                            Deserunt, excepturi. Asperiores quis nobis 
+                            eos provident ea atque officia corporis quidem!
+                        </p>
+                        <div class="dropdown">
+                            <button>Ejercicios</button>
+                            <div class="ejercicios_guia">
+                                <a href="">CSS Embedded</a>
+                                <a href="">CSS Style</a>
+                                <a href="">CSS File</a>
+                                <a href="">Devil May Cry</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guia_card">
+                        <div class="card_header">
+                            <h3><span class="accent">Guía 2</span></h3>
+                            <h4>14/09/2024</h4>
+                        </div>
+                        <p>
+                            Descripción de la guía 
+                            Lorem, ipsum dolor sit 
+                            amet consectetur adipisicing elit. 
+                            Deserunt, excepturi. Asperiores quis nobis 
+                            eos provident ea atque officia corporis quidem!
+                        </p>
+                        <div class="dropdown">
+                            <button>Ejercicios</button>
+                            <div class="ejercicios_guia">
+                                <a href="">Película</a>
+                                <a href="">Tablero</a>
+                                <a href="">Biografía</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guia_card">
+                        <div class="card_header">
+                            <h3><span class="accent">Guía 3</h3>
+                            <h4>21/09/2024</h4>
+                        </div>
+                        <p>
+                            Descripción de la guía 
+                            Lorem, ipsum dolor sit 
+                            amet consectetur adipisicing elit. 
+                            Deserunt, excepturi. Asperiores quis nobis 
+                            eos provident ea atque officia corporis quidem!
+                        </p>
+                        <div class="dropdown">
+                            <button>Ejercicios</button>
+                            <div class="ejercicios_guia">
+                                <a href="">Oscares</a>
+                                <a href="">Menu Horizontal</a>
+                                <a href="">Viajes</a>
+                                <a href="">Cartas 1</a>
+                                <a href="">Cartas 2</a>
+                                <a href="">Viajes (flex)</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guia_card">
+                        <div class="card_header">
+                            <h3><span class="accent">Guía 4</span></h3>
+                            <h4>28/09/2024</h4>
+                        </div>
+                        <p>
+                            Descripción de la guía 
+                            Lorem, ipsum dolor sit 
+                            amet consectetur adipisicing elit. 
+                            Deserunt, excepturi. Asperiores quis nobis 
+                            eos provident ea atque officia corporis quidem!
+                        </p>
+                        <div class="dropdown">
+                            <button>Ejercicios</button>
+                            <div class="ejercicios_guia">
+                                <a href="">Link1</a>
+                                <a href="">Link2</a>
+                                <a href="">Link3</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
+            </section>
 
-                <div class="guia-card">
+            <section id="foda">
+                <h2>FODA</h2>
+                <div class="container_foda">
+                    <div id="fortalezas">
+                        <h3>Fortalezas</h3>
+                        <p>¿Qué he mejorado?</p>
+                        <ul>
+                            <li>Mejores diseños de interfaces</li>
+                            <li>Creación y posicionamiento de elementos</li>
+                            <li>Maquetación web avanzada</li>
+                        </ul>
+                    </div>
+                    <div id="oportunidades">
+                        <h3>Oportunidades</h3>
+                        <p>¿Qué me llevo del curso?</p>
+                        <ul>
+                            <li>Conocimiento como maquetador y diseñador web</li>
+                            <li>Implementación de páginas web para empresas o negocios pequeños</li>
+                        </ul>
+                    </div>
+                    <div id="desafios">
+                        <h3>Desafíos</h3>
+                        <p>¿Qué areas necesito mejorar?</p>
+                        <ul>
+                            <li>Diseño de las páginas web</li>
+                            <li>Resolución de problemas de posicionamiento</li>
+                            <li>Principios de la experiencia de usuario</li>
+                        </ul>
+                    </div>
+                    <div id="amenazas">
+                        <h3>Amenazas</h3>
+                        <p>¿Qué obstáculos me encontré?</p>
+                        <ul>
+                            <li>Poca pasión por el diseño web</li>
+                            <li>Sensación de que ya conocía la mayoría de temas y contenido</li>
+                            <li>Desmotivación por la baja calidad de mis diseños</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-                    <h3>Segunda Guía, 14/09/2024</h3>
-                    <ul>
-                        <li>
-                            <a href="./html/20235854_Guia2/pelicula.html">Ejercicio 1: Pelicula</a>
-                        </li>
-                        <li>
-                            <a href="./html/20235854_Guia2/tablero.html">Ejercicio 2: Tablero</a>
-                        </li>
-                        <li>
-                            <a href="./html/20235854_Guia2/biografia.html">Ejercicio 3: Biografia</a>
-                        </li>
-                    </ul>
+            <section id="retroalimentacion">
+                <h2>Retroalimentación</h2>
 
+                <div class="feed_layout">
+                    <div class="feed_card">
+                        <img src="img/thumbs-up-solid.svg" id="liked" alt="">
+                    </div>
+                    <div class="feed_card">
+                        <img src="img/thumbs-down-solid.svg" id="disliked" alt="">
+                    </div>
+                    <div class="feed_card">
+                        <img src="img/bullseye-solid.svg" id="challenge" alt="">
+                    </div>
+                    <div class="feed_card">
+                        <img src="img/comments-solid.svg" id="feedback" alt="">
+                    </div>
                 </div>
 
-                <div class="guia-card">
+            </section>
 
-                    <h3>Tercera Guía, 21/09/2024</h3>
-                    <ul>
-                        <li>
-                            <a href="./html/20235854_Guia3/oscares.html">Ejercicio 1: Oscares</a>
-                        </li>
-                        <li>
-                            <a href="./html/20235854_Guia3/menu_horizontal.html">Ejercicio 2: Menu Horizontal</a>
-                        </li>
-                        <li>
-                            <a href="./html/20235854_Guia3/index.html">Ejercicio 3: Viajes (index)</a>
-                        </li>
-                        <li>
-                            <a href="./html/20235854_Guia3/planes.html">Ejercicio 3: Viajes (planes)</a>
-                        </li>
-                        <li>
-                            <a href="./html/20235854_Guia3/galeria.html">Ejercicio 3: Viajes (galeria)</a>
-                        </li>
-                        <li>
-                            <a href="./html/20235854_Guia3/index_flexible.html">Ejercicio 4: Viajes (flexible)</a>
-                        </li>
-                        <li>
-                            <a href="./html/20235854_Guia3/analisis.html">Ejercicio 5: Cartas (resultado 1)</a>
-                        </li>
-                        <li>
-                            <a href="./html/20235854_Guia3/analisis_invertido.html">Ejercicio 5: Cartas (resultado 2)</a>
-                        </li>
-                    </ul>
-
-                </div>
-
-            </div>
         </main>
     </body>
 </html>
