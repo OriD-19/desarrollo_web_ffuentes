@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title></title>
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/estilo.css" rel="stylesheet">
     </head>
     <body class="formdatos">
         <form action="ejercicio3.html" method="post">
@@ -44,13 +44,13 @@
                         <td>Sexo:</td>
                         <td>
                             <input type="radio" name="sexo" value="mas" checked>Masculino <br>
-                            <input type="radio" name="sexo" value="fem" checked>Femenino <br>
+                            <input type="radio" name="sexo" value="fem" >Femenino <br>
                         </td>
                     </tr>
                     <tr>
                         <td>Edad:</td>
                         <td>
-                            <input type="number" name="edad" min="18" max="50"/>Masculino <br>
+                            <input type="number" name="edad" min="18" max="50"/><br>
                         </td>
                     </tr>
                     <tr>
@@ -71,9 +71,32 @@
                 <input type="radio" name="tema" value="tecnologia"> Tecnología <br>
                 <input type="radio" name="tema" value="musica"> Música <br>
                 <input type="radio" name="tema" value="informatica"> Informática <br><br>
+
+                Libros y articulos de su interés:
+                <select id="Selarea" multiple>
+                    <option value="Asp">Asp .NET</option>
+                    <option value="vb">VB.net</option>
+                    <option value="C#">C#.net</option>
+                    <option value="Javascript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Java">Java</option>
+                    <option value="Android">Android</option>
+                    <option value="Cisco">Curricula Cisco</option>
+                    <option value="Redes">Redes comunicación informática</option>
+                    <option value="SQL">SQL</option>
+                    <option value="Oracle">Oracle</option>
+                </select>
             </fieldset>
 
             <fieldset id="aficiones">
+                <legend>Aficiones</legend>
+                Elija su pasatiempo: <br><br>
+                <input type="checkbox" name="aficion" value="deporte" checked>Deporte <br>
+                <input type="checkbox" name="aficion" value="musica">Música <br>
+                <input type="checkbox" name="aficion" value="lectura">Lectura <br>
+                <input type="checkbox" name="aficion" value="pesca">Pesca <br>
+                <input type="checkbox" name="aficion" value="pasear">Pasear <br>
+                <input type="checkbox" name="aficion" value="cine">Cine
             </fieldset>
 
             <button class="boton" type="submit">
