@@ -5,80 +5,343 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Desarrollo Web I - Fernando Fuentes</title>
         <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     </head>
     <body>
+        <div id="background_effect">
+
+        </div>
         <header>
-            <h1>Desarrollo Web I: Guías de trabajo</h1> 
-            <ul>
-                <li>Alumno: Fernando José Fuentes Castillo 20235854</li>
-                <li>Docente: Guillermo Calderón</li>
-            </ul>
+            <div class="texto_header">
+                <h1>Desarrollo Web I</h1> 
+                <div class="datos_personales">
+                    <div class="authors">
+                        <h2><span class="accent">Por:</span> Fernando José Fuentes Castillo (20235854)</h2> 
+                        <h2><span class="accent">Profesor:</span> Guillermo Calderón</h2>
+                    </div>
+                    <p id="bio">
+                        Soy un estudiante de Ingeniería de software y Negocios Digitales
+                        con mucha voluntad para aprender cosas nuevas. En la presente página,
+                        se encuentran todos los trabajos relacoinados con la materia,
+                        con el fin de mejorar mis habilidades en el desarrollo web.
+                    </p>
+                    <a href="#guias" class="call_to_action">Guias y proyectos</a>
+                </div>
+            </div>
+            <div class="html_css">
+                <img id="html" src="img/pngegg.png" alt="html logo">
+                <img id="css" src="img/pngegg(1).png" alt="css logo">
+            </div>
         </header>
 
         <main>
-            <h2>Guías de trabajo</h2>
-            <div class="container-guias">
-                <div class="guia-card">
-                    <h3>Primera Guía, 7/09/2024</h3>
-                    <ul>
-                        <li>
 
-                            <a href="./html/20235854_Guia1/index.html">Primera guia de trabajo</a>
-                        </li>
-                    </ul>
+            <section class="sobre_materia">
+                <div class="content">
+                    <h2>Sobre la materia</h2>
+                    <div>
+                        <div class="center">
+                            <p>
+                                Desarrollo Web I es un curso introductorio a la progrmaación
+                                web, con énfasis en el desarrollo frontend y en la maquetación
+                                con <span class="accent">HTML</span> y <span class="accent">CSS</span>.
+                                Durante la segunda mitad del curso, se entrará de lleno a la
+                                parte de programación con <span class="accent">JavaScript</span> 
+                                y al manejo de la funcionalidad de las páginas web.
+                            </p>
+                        </div>
+                        <img src="img/webdevelopment.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="guias" id="guias">
+                <h2>Guías de trabajo</h2>
+                <div class="container_guias">
+                    <div class="guia_card">
+                        <div class="card_header">
+                            <h3><span class="accent">Guía 1</span></h3>
+                            <h4>07/09/2024</h4>
+                        </div>
+                        <div class="card_content">
+                            <p>
+                                Una introducción teórica y práctica a las tecnologías
+                                web HTML y CSS. Ejercicios introductorios sobre cómo
+                                añadir estilos básicos a una página web.
+                                Además, el primer diseño completo de una página sencilla
+                                sobre una serie de anime.
+                            </p>
+                        </div>
+                        <div class="card_footer">
+                            <label for="ejercicios1">
+                                Ejercicios
+                            </label>
+                            <input type="checkbox" name="ejercicios2" id="ejercicios1">
+                            <div class="dropdown">
+                                <div class="ejercicios_guia">
+                                    <a href="html/20235854_Guia1/estilos_embebidos.html">CSS Embedded</a>
+                                    <a href="html/20235854_Guia1/ejemplo2.html">CSS Style</a>
+                                    <a href="html/20235854_Guia1/paises.html">CSS File</a>
+                                    <a href="html/20235854_Guia1/dmc.html">Devil May Cry</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guia_card">
+                        <div class="card_header">
+                            <h3><span class="accent">Guía 2</span></h3>
+                            <h4>14/09/2024</h4>
+                        </div>
+                        <div class="card_content">
+                            <p>
+                                Descripción de los selectores de CSS avanzados.
+                                Práctica sobre cómo seleccionar elementos hermanos,
+                                hijos, pseudo-clases y más formas de escoger qué
+                                elementos de nuestra página queremos estilizar.
+                                Para finalizar, una biografía del autor de esta página (yo 🤓).
+                            </p>
+                        </div>
+                        <div class="card_footer">
+                            <label for="ejercicios2">Ejercicios</label>
+                            <input type="checkbox" name="ejercicios2" id="ejercicios2">
+                            <div class="dropdown">
+                                <div class="ejercicios_guia">
+                                    <a href="html/20235854_Guia2/pelicula.html">Película</a>
+                                    <a href="html/20235854_Guia2/tablero.html">Tablero</a>
+                                    <a href="html/20235854_Guia2/biografia.html">Biografía</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guia_card">
+                        <div class="card_header">
+                            <h3><span class="accent">Guía 3</h3>
+                            <h4>21/09/2024</h4>
+                        </div>
+                        <div class="card_content">
+                            <p>
+                                Utilizando posicionamiento y visualización (position y display) en CSS.
+                                Gracias a estas propiedades, podemos definir de qué manera se ubican
+                                los elementos en la página y de qué forma se comporta su contenido
+                                de acuerdo con el modelo de caja de CSS.
+                                Para practicar, algunos diseños de componentes sencillos, como un menu flotante.
+                            </p>
+                        </div>
+                        <div class="card_footer">
+                            <label for="ejercicios3">Ejercicios</label>
+                            <input type="checkbox" name="ejercicios" id="ejercicios3">
+                            <div class="dropdown">
+                                <div class="ejercicios_guia">
+                                    <a href="html/20235854_Guia3/oscares.html">Oscares</a>
+                                    <a href="html/20235854_Guia3/menu_horizontal.html">Menu Horizontal</a>
+                                    <a href="html/20235854_Guia3/index.html">Viajes</a>
+                                    <a href="html/20235854_Guia3/analisis.html">Cartas 1</a>
+                                    <a href="html/20235854_Guia3/analisis_invertido.html">Cartas 2</a>
+                                    <a href="html/20235854_Guia3/index_flexible.html">Viajes (flex)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guia_card">
+                        <div class="card_header">
+                            <h3><span class="accent">Guía 4</span></h3>
+                            <h4>28/09/2024</h4>
+                        </div>
+                        <div class="card_content">
+                            <p>
+                                Enfocada a la práctica del diseño web responsivo y 
+                                profundización en el diseño fluido (adaptativo)
+                                como mejor alternativa al diseño fijo.
+                                Se practican media queries, puntos de quiebre
+                                y la adaptación de una misma interfaz para varios dispotivos.
+                            </p>
+                        </div>
+                        <div class="card_footer">
+                            <label for="ejercicios4">Ejercicios</label>
+                            <input type="checkbox" name="ejercicios" id="ejercicios4">
+                            <div class="dropdown">
+                                <div class="ejercicios_guia">
+                                    <a href="html/20235854_Guia4/ejercicio1.html">Formulario 1</a>
+                                    <a href="html/20235854_Guia4/ejercicio2.html">Formulario 2</a>
+                                    <a href="html/20235854_Guia4/ejercicio3.html">Formulario 3</a>
+                                    <a href="html/20235854_Guia4/login.html">Login</a>
+                                    <a href="html/20235854_Guia4/mediaqueries.html">Media Queries</a>
+                                    <a href="html/20235854_Guia4/index.html">Responsive</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
+            </section>
 
-                <div class="guia-card">
+            <section id="foda">
+                <h2>FODA</h2>
+                <div class="container_foda">
+                    <div id="fortalezas">
+                        <h3>Fortalezas</h3>
+                        <p>¿Qué he mejorado?</p>
+                        <ul>
+                            <li>Mejores diseños de interfaces</li>
+                            <li>Creación y posicionamiento de elementos</li>
+                            <li>Maquetación web avanzada</li>
+                        </ul>
+                    </div>
+                    <div id="oportunidades">
+                        <h3>Oportunidades</h3>
+                        <p>¿Qué me llevo del curso?</p>
+                        <ul>
+                            <li>Conocimiento como maquetador y diseñador web</li>
+                            <li>Implementación de páginas web para empresas o negocios pequeños</li>
+                        </ul>
+                    </div>
+                    <div id="desafios">
+                        <h3>Desafíos</h3>
+                        <p>¿Qué areas necesito mejorar?</p>
+                        <ul>
+                            <li>Diseño de las páginas web</li>
+                            <li>Resolución de problemas de posicionamiento</li>
+                            <li>Principios de la experiencia de usuario</li>
+                        </ul>
+                    </div>
+                    <div id="amenazas">
+                        <h3>Amenazas</h3>
+                        <p>¿Qué obstáculos me encontré?</p>
+                        <ul>
+                            <li>Poca pasión por el diseño web</li>
+                            <li>Sensación de que ya conocía la mayoría de temas y contenido</li>
+                            <li>Desmotivación por la baja calidad de mis diseños</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-                    <h3>Segunda Guía, 14/09/2024</h3>
-                    <ul>
-                        <li>
-                            <a href="./html/20235854_Guia2/pelicula.html">Ejercicio 1: Pelicula</a>
-                        </li>
-                        <li>
-                            <a href="./html/20235854_Guia2/tablero.html">Ejercicio 2: Tablero</a>
-                        </li>
-                        <li>
-                            <a href="./html/20235854_Guia2/biografia.html">Ejercicio 3: Biografia</a>
-                        </li>
-                    </ul>
+            <section id="retroalimentacion">
+                <h2>Retroalimentación</h2>
 
+                <div class="feed_layout">
+                    <div class="feed_card">
+                        <img src="img/thumbs-up-solid.svg" id="liked" alt="">
+                        <h3>Bien</h3>
+                        <div class="feed_body">
+                            <ul>
+                                <li>Clases dinámicas</li>
+                                <li>Muchos recursos didácticos</li>
+                                <li>Práctica constante</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feed_card">
+                        <img src="img/thumbs-down-solid.svg" id="disliked" alt="">
+                        <h3>Mal</h3>
+                        <div class="feed_body">
+                            <ul>
+                                <li>Diseño en general</li>
+                                <li>Problemas con la comunicación</li>
+                                <li>Trabajo en equipo complicado</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feed_card">
+                        <img src="img/bullseye-solid.svg" id="challenge" alt="">
+                        <h3>Retos</h3>
+                        <div class="feed_body">
+                            <p>
+                                El principal reto para mí fue el diseño de las páginas web.
+                                Las interfaces nunca han sido mi fuerte. Gracias al curso, pude
+                                explorar diferentes conceptos y principios del diseño, además 
+                                de aprender sobre el código HTML y CSS.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feed_card">
+                        <img src="img/comments-solid.svg" id="feedback" alt="">
+                        <h3>Sugerencias</h3>
+                        <div class="feed_body">
+                            <p>
+                                La principal sugerencia sería tomar este curso con alguna experiencia previa de Git. Algunos no
+                                tienen conocimiento de cómo gestionar repositorios, por lo que la colaboración
+                                se complica demasiado.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="guia-card">
+            </section>
 
-                    <h3>Tercera Guía, 21/09/2024</h3>
-                    <ul>
-                        <li>
-                            <a href="./html/20235854_Guia3/oscares.html">Ejercicio 1: Oscares</a>
-                        </li>
-                        <li>
-                            <a href="./html/20235854_Guia3/menu_horizontal.html">Ejercicio 2: Menu Horizontal</a>
-                        </li>
-                        <li>
-                            <a href="./html/20235854_Guia3/index.html">Ejercicio 3: Viajes (index)</a>
-                        </li>
-                        <li>
-                            <a href="./html/20235854_Guia3/planes.html">Ejercicio 3: Viajes (planes)</a>
-                        </li>
-                        <li>
-                            <a href="./html/20235854_Guia3/galeria.html">Ejercicio 3: Viajes (galeria)</a>
-                        </li>
-                        <li>
-                            <a href="./html/20235854_Guia3/index_flexible.html">Ejercicio 4: Viajes (flexible)</a>
-                        </li>
-                        <li>
-                            <a href="./html/20235854_Guia3/analisis.html">Ejercicio 5: Cartas (resultado 1)</a>
-                        </li>
-                        <li>
-                            <a href="./html/20235854_Guia3/analisis_invertido.html">Ejercicio 5: Cartas (resultado 2)</a>
-                        </li>
-                    </ul>
+            <section id="aprendizaje">
+                <h2>Aprendizaje continuo</h2>
+                
+                <div class="resource_container">
+                    <div class="resource_card">
+                        <img src="img/768px-Stack_Overflow_icon.svg.png" alt="">
+                        <h3>Stack Overflow</h3>
+                        <p>
+                            Consultas sobre problemas con el código
+                            y trucos interesantes para el diseño con CSS.
+                            Algunos de los efectos y selectores de esta página
+                            fueron escritos con base en respuestas muy útiles
+                            de este foro.
+                        </p>
+                    </div>
 
+                    <div class="resource_card">
+                        <img src="img/1817991c31c535d0.png" alt="">
+                        <h3>CSS Tricks</h3>
+                        <p>
+                            Una de las mejores páginas para aprender maquetación web.
+                            Muchos de los trucos referentes a flexbox y al posicionamiento
+                            de elementos los he aprendido gracias a los extensos y 
+                            detallados artículos de esta página.
+                        </p>
+                    </div>
+
+                    <div class="resource_card">
+                        <img src="img/w3logo.png" alt="">
+                        <h3>W3 Schools</h3>
+                        <p>
+                            Uno de los mejores sitios para aprender desarrollo web
+                            y programación en general. Contiene tutoriales y referencias
+                            sobre diferentes conceptos de HTML y CSS, además de snippets
+                            de código interactivos.
+                        </p>
+                    </div>
                 </div>
+            </section>
 
-            </div>
+            <section id="a_continuacion">
+                <h2>A continuación...</h2>
+                <p>Tecnologías que me gustaría aprender</p>
+
+                <ul>
+                    <li>
+                        <img src="img/javascript-logo-javascript-icon-transparent-free-png.webp" alt="">
+                        <div class="position_text">
+                            <p>JavaScript</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/Tailwind_CSS_Logo.svg.png" alt="">
+                        <div class="position_text">
+                            <p>Tailwind CSS</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/Node.js_logo.svg" alt="">
+                        <div class="position_text">
+                            <p>Node.js</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
         </main>
+
+        <footer>
+            &copy; Sitio web diseñado por Fernando Fuentes 2024
+        </footer>
     </body>
 </html>
