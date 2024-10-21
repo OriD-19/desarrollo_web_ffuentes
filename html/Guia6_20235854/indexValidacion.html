@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Validación en JavaScript</title>
+        <link href="css/styleValidacion.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Validación en JavaScript</h1>
+
+        <form id="formulario" onsubmit="return false" >
+
+            <!-- Todos los campos son de tipo text para probar mejor la validacion utilizando solamente javascript -->
+
+            <label for="carnet">Carnet</label>
+            <p class="error" id="errorCarnet"></p>
+            <input type="text" id="carnet" name="carnet" placeholder="Dos letras y tres números">
+
+            <label for="nombre">Nombre completo</label>
+            <p class="error" id="errorNombre"></p>
+            <input type="text" id="nombre" name="nombre" placeholder="Solo letras (mayúsc. y minusc.)">
+
+            <label for="dui">DUI</label>
+            <p class="error" id="errorDui"></p>
+            <input type="text" id="dui" name="dui" placeholder="########-#">
+
+            <label for="nit">NIT</label>
+            <p class="error" id="errorNit"></p>
+            <input type="text" id="nit" name="nit" placeholder="####-######-###-#">
+
+            <label for="nacimiento">Fecha de nacimiento</label>
+            <p class="error" id="errorNacimiento"></p>
+            <input type="text" id="nacimiento" name="nacimiento" placeholder="dd/mm/yyyy">
+
+            <label for="correo">Correo electrónico</label>
+            <p class="error" id="errorCorreo"></p>
+            <input type="text" id="correo" name="correo">
+
+            <label for="edad">Edad</label>
+            <p class="error" id="errorEdad"></p>
+            <input type="text" id="edad" name="edad">
+
+            <input type="submit" value="Validar informacion" id="validarFormulario">
+
+        </form>
+
+        <script src="js/validacion.js"></script> 
+    </body>
+</html>
