@@ -30,7 +30,9 @@ function agregarElemento() {
 function ordenarElementos() {
     // resetear el contenedor, para no renderizar dos veces los datos antiguos y los nuevos
     containerArregloOrdenado.innerHTML = "";
-    for (let i of arreglo.sort()) {
+    const sorted = [...arreglo].sort((a, b) => a-b);
+
+    for (let i of sorted) {
         let caja = document.createElement('div');
         caja.className = "col-md-1 colum-green";
         let valor = document.createElement("h3");
