@@ -96,58 +96,125 @@ const recorrerFormulario = function () {
         "idRdOtro": "Otro",
     }
 
-    let table = `
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Campo</th>
-                    <th>Valor</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Nombres</td>
-                    <td>${nombres}</td>
-                </tr>
-                <tr>
-                    <td>Apellidos</td>
-                    <td>${apellidos}</td>
-                </tr>
-                <tr>
-                    <td>Fecha de Nacimiento</td>
-                    <td>${fechaNac}</td>
-                </tr>
-                <tr>
-                    <td>Correo</td>
-                    <td>${correo}</td>
-                </tr>
-                <tr>
-                    <td>Contraseña</td>
-                    <td>${password}</td>
-                </tr>
-                <tr>
-                    <td>Carrera</td>
-                    <td>${mapCarreras[radio[0].id]}</td>
-                </tr>
-                <tr>
-                    <td>Pais</td>
-                    <td>${paises[selectPais-1]}</td>
-                </tr>
-                <tr>
-                    <td>Intereses</td>
-                    <td>
-                        <ul>
-                            ${checkboxes.map(checkbox => `<li>${mapInterests[checkbox.id]}</li>`).join('')}
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    `
+    let table = document.createElement('table');
+    table.classList.add('table');
+    let tbody = document.createElement('tbody');
 
-    resultado += table;
+    let header = document.createElement('thead');
+    let trHeader = document.createElement('tr');
+    let thHeader = document.createElement('th');
+    thHeader.textContent = "Campo";
+    trHeader.appendChild(thHeader);
 
-    bodyModal.innerHTML = resultado;
+    let thHeader2 = document.createElement('th');
+    thHeader2.textContent = "Valor";
+    trHeader.appendChild(thHeader2);
+
+    header.appendChild(trHeader);
+
+    table.appendChild(header);
+
+    let trNombres = document.createElement('tr');
+    let tdNombres = document.createElement('td');
+    tdNombres.textContent = "Nombres";
+    trNombres.appendChild(tdNombres);
+
+    let tdNombresValor = document.createElement('td');
+    tdNombresValor.textContent = nombres;
+    trNombres.appendChild(tdNombresValor);
+    
+    tbody.appendChild(trNombres);
+
+    let trApellidos = document.createElement('tr');
+    let tdApellidos = document.createElement('td');
+    tdApellidos.textContent = "Apellidos";
+    trApellidos.appendChild(tdApellidos);
+
+    let tdApellidosValor = document.createElement('td');
+    tdApellidosValor.textContent = apellidos;
+    trApellidos.appendChild(tdApellidosValor);
+
+    tbody.appendChild(trApellidos);
+
+    let trFechaNac = document.createElement('tr');
+    let tdFechaNac = document.createElement('td');
+    tdFechaNac.textContent = "Fecha de Nacimiento";
+    trFechaNac.appendChild(tdFechaNac);
+
+    let tdFechaNacValor = document.createElement('td');
+    tdFechaNacValor.textContent = fechaNac;
+    trFechaNac.appendChild(tdFechaNacValor);
+
+    tbody.appendChild(trFechaNac);
+
+    let trCorreo = document.createElement('tr');
+    let tdCorreo = document.createElement('td');
+    tdCorreo.textContent = "Correo Electrónico";
+    trCorreo.appendChild(tdCorreo);
+
+    let tdCorreoValor = document.createElement('td');
+    tdCorreoValor.textContent = correo;
+    trCorreo.appendChild(tdCorreoValor);
+
+    tbody.appendChild(trCorreo);
+
+    let trPassword = document.createElement('tr');
+    let tdPassword = document.createElement('td');
+    tdPassword.textContent = "Contraseña";
+    trPassword.appendChild(tdPassword);
+
+    let tdPasswordValor = document.createElement('td');
+    tdPasswordValor.textContent = password;
+    trPassword.appendChild(tdPasswordValor);
+
+    tbody.appendChild(trPassword);
+
+    let trIntereses = document.createElement('tr');
+    let tdIntereses = document.createElement('td');
+    tdIntereses.textContent = "Intereses";
+    trIntereses.appendChild(tdIntereses);
+
+    let tdInteresesValor = document.createElement('td');
+    let ulIntereses = document.createElement('ul');
+    checkboxes.forEach(checkbox => {
+        let li = document.createElement('li');
+        li.textContent = mapInterests[checkbox.id];
+        ulIntereses.appendChild(li);
+    });
+    tdInteresesValor.appendChild(ulIntereses);
+    trIntereses.appendChild(tdInteresesValor);
+        
+    tbody.appendChild(trIntereses);
+
+    let trCarrera = document.createElement('tr');
+    let tdCarrera = document.createElement('td');
+    tdCarrera.textContent = "Carrera";
+    trCarrera.appendChild(tdCarrera);
+
+    let tdCarreraValor = document.createElement('td');
+    tdCarreraValor.textContent = mapCarreras[radio[0].id];
+    trCarrera.appendChild(tdCarreraValor);
+
+    tbody.appendChild(trCarrera);
+
+    let trPais = document.createElement('tr');
+    let tdPais = document.createElement('td');
+    tdPais.textContent = "País";
+    trPais.appendChild(tdPais);
+
+    let tdPaisValor = document.createElement('td');
+    tdPaisValor.textContent = paises[selectPais-1];
+    trPais.appendChild(tdPaisValor);
+
+    tbody.appendChild(trPais);
+    table.appendChild(tbody);
+
+    let resultadoContainer = document.createElement('div');
+    resultadoContainer.innerHTML = resultado;
+
+    bodyModal.appendChild(resultadoContainer);
+    bodyModal.appendChild(table);
+
     modal.show();
 }
 
