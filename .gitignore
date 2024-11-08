@@ -1,2 +1,5 @@
 *.rar
 *.zip
+*.env
+credentials.json
+node_modules/
