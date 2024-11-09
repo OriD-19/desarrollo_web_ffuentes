@@ -1,7 +1,11 @@
-import { registerUser } from "./firebase.js";
+import { registerUser, loginUser } from "./firebase.js";
 
 async function register() {
     await registerUser('fernando2010@gmail.com', '123456');
 }
 
-register();
+async function login() {
+    await loginUser('fernando2010@gmail.com', '123456');
+}
+
+login();
